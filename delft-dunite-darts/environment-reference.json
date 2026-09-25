@@ -1,0 +1,19 @@
+{
+  "python": "3.11.16 (main, Aug 27 2026, 14:37:43) [Clang 20.1.8 ]",
+  "packages": {
+    "open-darts": "2.0.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.2",
+    "h5py": "3.14.0",
+    "iapws": "1.5.5",
+    "open-darts-flash": "0.14.0"
+  },
+  "native_commit": "bb040aa025bfcafff20578654ad0b0d819d463a0",
+  "native_repository": "https://gitlab.com/open-darts/open-darts.git",
+  "native_platform": "macOS arm64, CPU/OpenMP",
+  "source_patch": "build/macos-packaging.patch",
+  "engine_sha256": "413d197508d483f854a2652c5ee5c5747ddcc734d178ff6ca80ad4fa12238c4d",
+  "note": "This is build provenance, not a portable binary or complete environment lock. Runtime hashes change across platforms/builds."
+}

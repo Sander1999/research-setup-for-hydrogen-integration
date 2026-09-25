@@ -1,0 +1,40 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 627e05a..82303b7 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -22,7 +22,19 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ #                    builds otherwise fail at `import darts.engines` with
+ #                    "libcudss.so.0: cannot open shared object file"). Harmless for
+ #                    non-GPU builds (the extra entry just points at darts/linear_solvers/).
+-set(CMAKE_INSTALL_RPATH "$ORIGIN;$ORIGIN/linear_solvers")
++if(APPLE)
++    # Link with the final search paths to avoid repeated install_name_tool edits.
++    set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
++    if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
++        # Homebrew GCC already embeds @loader_path. Adding it again at install
++        # time makes install_name_tool reject the complete RPATH update.
++        set(CMAKE_INSTALL_RPATH "@loader_path/linear_solvers")
++    else()
++        set(CMAKE_INSTALL_RPATH "@loader_path;@loader_path/linear_solvers")
++    endif()
++else()
++    set(CMAKE_INSTALL_RPATH "$ORIGIN;$ORIGIN/linear_solvers")
++endif()
+ set(CMAKE_MACOSX_RPATH 1)
+ 
+ # Set DARTS installation folder
+diff --git a/pyproject.toml b/pyproject.toml
+index 44d4aac..bc67eb6 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -63,8 +63,8 @@ include = ["darts*"]
+ exclude = ["discretizer", "engines", "models", "linear_solvers", "docs", "thirdparty"]
+ 
+ [tool.setuptools.package-data]
+-darts = ['*.pyd', '*.so', '*.dll', 'CHANGELOG.md', 'build_info.txt', 'libstdc++.so.6']
+-"darts.linear_solvers" = ['*.pyd', '*.so', '*.dll', 'libcudss.so*']
++darts = ['*.pyd', '*.so', '*.dll', '*.dylib', 'CHANGELOG.md', 'build_info.txt', 'libstdc++.so.6']
++"darts.linear_solvers" = ['*.pyd', '*.so', '*.dll', '*.dylib', 'libcudss.so*']
+ "darts.physics.properties" = ["databases/*"]
+ 
+ # include darts command line interface (cli.py)

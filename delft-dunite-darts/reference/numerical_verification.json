@@ -1,0 +1,320 @@
+{
+  "code_sha256": "74a576b1b862e601de76983cbe01575acb77d2ff639cf61a97b90d7eea78a220",
+  "unit_tests_run": 11,
+  "unit_tests_passed": true,
+  "native_conservation_threshold": 2e-05,
+  "timestep_target": 0.03,
+  "grid_target": 0.1,
+  "tiny_output_absolute_floor_fraction_of_generation": 1e-05,
+  "fluid_benchmarks_passed": true,
+  "comparisons": {
+    "timestep_refinement": {
+      "metrics": {
+        "generated_H2_kg": {
+          "baseline": 4535988.206672938,
+          "refined": 4536377.350097527,
+          "relative_difference": 8.578286032153405e-05,
+          "absolute_difference_kg": 389.1434245891869,
+          "absolute_resolution_floor_kg": 45.36377350097527,
+          "relative_target": 0.03,
+          "within_target": true
+        },
+        "retained_free_H2_kg": {
+          "baseline": 359831.46731086436,
+          "refined": 360001.426874432,
+          "relative_difference": 0.0004721080275799407,
+          "absolute_difference_kg": 169.95956356765237,
+          "absolute_resolution_floor_kg": 45.36377350097527,
+          "relative_target": 0.03,
+          "within_target": true
+        },
+        "retained_dissolved_H2_kg": {
+          "baseline": 4176156.8412741255,
+          "refined": 4176376.025264862,
+          "relative_difference": 5.248186212413465e-05,
+          "absolute_difference_kg": 219.18399073649198,
+          "absolute_resolution_floor_kg": 45.36377350097527,
+          "relative_target": 0.03,
+          "within_target": true
+        },
+        "exported_H2_kg": {
+          "baseline": 0.0027888072620666287,
+          "refined": 0.0027887131395528337,
+          "relative_difference": 3.3750096349551615e-05,
+          "absolute_difference_kg": 9.412251379507797e-08,
+          "absolute_resolution_floor_kg": 45.36377350097527,
+          "relative_target": 0.03,
+          "within_target": true
+        }
+      },
+      "all_within_target": true,
+      "cells": 3648,
+      "max_native_relative_balance_error": {
+        "H2": 2.4527303795439143e-12,
+        "H2O": 4.801385210803326e-14,
+        "NaCl": 4.1800617575786285e-14
+      }
+    },
+    "timestep_refinement_closed": {
+      "metrics": {
+        "generated_H2_kg": {
+          "baseline": 4520741.79836857,
+          "refined": 4521120.772860943,
+          "relative_difference": 8.382312957614971e-05,
+          "absolute_difference_kg": 378.97449237294495,
+          "absolute_resolution_floor_kg": 45.21120772860944,
+          "relative_target": 0.03,
+          "within_target": true
+        },
+        "retained_free_H2_kg": {
+          "baseline": 465047.2686227787,
+          "refined": 465235.10586474027,
+          "relative_difference": 0.00040374692191902915,
+          "absolute_difference_kg": 187.83724196156254,
+          "absolute_resolution_floor_kg": 45.21120772860944,
+          "relative_target": 0.03,
+          "within_target": true
+        },
+        "retained_dissolved_H2_kg": {
+          "baseline": 4055694.636702002,
+          "refined": 4055885.7737402353,
+          "relative_difference": 4.71258435014955e-05,
+          "absolute_difference_kg": 191.1370382332243,
+          "absolute_resolution_floor_kg": 45.21120772860944,
+          "relative_target": 0.03,
+          "within_target": true
+        },
+        "exported_H2_kg": {
+          "baseline": 0.0,
+          "refined": 0.0,
+          "relative_difference": 0.0,
+          "absolute_difference_kg": 0.0,
+          "absolute_resolution_floor_kg": 45.21120772860944,
+          "relative_target": 0.03,
+          "within_target": true
+        }
+      },
+      "all_within_target": true,
+      "cells": 3648,
+      "max_native_relative_balance_error": {
+        "H2": 4.033151333437039e-12,
+        "H2O": 5.777634939313223e-14,
+        "NaCl": 1.0701325742651253e-13
+      }
+    },
+    "grid_refinement": {
+      "metrics": {
+        "generated_H2_kg": {
+          "baseline": 4535988.206672938,
+          "refined": 4548090.836403935,
+          "relative_difference": 0.002661035182966324,
+          "absolute_difference_kg": 12102.629730997607,
+          "absolute_resolution_floor_kg": 45.48090836403936,
+          "relative_target": 0.1,
+          "within_target": true
+        },
+        "retained_free_H2_kg": {
+          "baseline": 359831.46731086436,
+          "refined": 450204.0439181783,
+          "relative_difference": 0.20073692768459134,
+          "absolute_difference_kg": 90372.57660731394,
+          "absolute_resolution_floor_kg": 45.48090836403936,
+          "relative_target": 0.1,
+          "within_target": false
+        },
+        "retained_dissolved_H2_kg": {
+          "baseline": 4176156.8412741255,
+          "refined": 4097886.896501407,
+          "relative_difference": 0.01874209895546899,
+          "absolute_difference_kg": 78269.94477271847,
+          "absolute_resolution_floor_kg": 45.48090836403936,
+          "relative_target": 0.1,
+          "within_target": true
+        },
+        "exported_H2_kg": {
+          "baseline": 0.0027888072620666287,
+          "refined": 0.0027881897667781396,
+          "relative_difference": 0.00022141913386711264,
+          "absolute_difference_kg": 6.174952884891068e-07,
+          "absolute_resolution_floor_kg": 45.48090836403936,
+          "relative_target": 0.1,
+          "within_target": true
+        }
+      },
+      "all_within_target": false,
+      "cells": 8640,
+      "max_native_relative_balance_error": {
+        "H2": 2.3727978333578617e-12,
+        "H2O": 3.979816321367631e-14,
+        "NaCl": 2.6886232159640837e-14
+      }
+    },
+    "grid_refinement_closed": {
+      "metrics": {
+        "generated_H2_kg": {
+          "baseline": 4520741.79836857,
+          "refined": 4534787.060330106,
+          "relative_difference": 0.0030972263470543503,
+          "absolute_difference_kg": 14045.26196153555,
+          "absolute_resolution_floor_kg": 45.34787060330106,
+          "relative_target": 0.1,
+          "within_target": true
+        },
+        "retained_free_H2_kg": {
+          "baseline": 465047.2686227787,
+          "refined": 551739.4450449577,
+          "relative_difference": 0.15712521046073658,
+          "absolute_difference_kg": 86692.17642217898,
+          "absolute_resolution_floor_kg": 45.34787060330106,
+          "relative_target": 0.1,
+          "within_target": false
+        },
+        "retained_dissolved_H2_kg": {
+          "baseline": 4055694.636702002,
+          "refined": 3983047.723232261,
+          "relative_difference": 0.017912323283001387,
+          "absolute_difference_kg": 72646.91346974112,
+          "absolute_resolution_floor_kg": 45.34787060330106,
+          "relative_target": 0.1,
+          "within_target": true
+        },
+        "exported_H2_kg": {
+          "baseline": 0.0,
+          "refined": 0.0,
+          "relative_difference": 0.0,
+          "absolute_difference_kg": 0.0,
+          "absolute_resolution_floor_kg": 45.34787060330106,
+          "relative_target": 0.1,
+          "within_target": true
+        }
+      },
+      "all_within_target": false,
+      "cells": 8640,
+      "max_native_relative_balance_error": {
+        "H2": 5.790490059741394e-12,
+        "H2O": 7.413121759600671e-14,
+        "NaCl": 1.1033886285378665e-13
+      }
+    }
+  },
+  "flow_minus_closed": {
+    "results": {
+      "baseline": {
+        "flow_minus_closed_generated_H2_kg": 15246.408304367214,
+        "fraction_of_closed_generation": 0.0033725456981129258
+      },
+      "timestep_refinement": {
+        "flow_minus_closed_generated_H2_kg": 15256.577236583456,
+        "fraction_of_closed_generation": 0.0033745122068325477
+      },
+      "grid_refinement": {
+        "flow_minus_closed_generated_H2_kg": 13303.77607382927,
+        "fraction_of_closed_generation": 0.0029337157173728095
+      }
+    },
+    "same_sign_in_all_tested_pairs": true,
+    "maximum_change_in_effect_kg": 1942.6322305379435,
+    "effect_change_less_than_half_baseline_effect": true,
+    "interpretation": "A consistent tested numerical effect remains conditional on uncalibrated kinetics, damage, geology and boundary assumptions. If the paired effect changes by at least half its baseline magnitude, do not report a resolved quantitative flow advantage."
+  },
+  "scope": "Numerical verification only. Grid sensitivity targets concern integrated outputs, not a resolved fracture geometry or field validation.",
+  "all_sensitivity_targets_met": false,
+  "accepted_state_domains": {
+    "closed": {
+      "pressure_min_bar": 204.93085901313057,
+      "pressure_max_bar": 294.92272328545846,
+      "salinity_min_molal": 2.4999999999998277,
+      "salinity_max_molal": 2.6828100182347905,
+      "maximum_absolute_salinity_drift_molal": 0.18281001823478915,
+      "maximum_fractional_salinity_drift": 0.07312400729391562
+    },
+    "flow_blocked_path": {
+      "pressure_min_bar": 195.02558466895795,
+      "pressure_max_bar": 304.8533807550795,
+      "salinity_min_molal": 2.499999999999822,
+      "salinity_max_molal": 2.6820435125136823,
+      "maximum_absolute_salinity_drift_molal": 0.182043512513681,
+      "maximum_fractional_salinity_drift": 0.07281740500547236
+    },
+    "flow_no_damage": {
+      "pressure_min_bar": 195.02558466895795,
+      "pressure_max_bar": 304.85339995263337,
+      "salinity_min_molal": 2.499999999999814,
+      "salinity_max_molal": 2.59276891031911,
+      "maximum_absolute_salinity_drift_molal": 0.0927689103191085,
+      "maximum_fractional_salinity_drift": 0.03710756412764338
+    },
+    "flow_salt_basis1": {
+      "pressure_min_bar": 195.02558466895795,
+      "pressure_max_bar": 304.85339995878553,
+      "salinity_min_molal": 2.499999999999815,
+      "salinity_max_molal": 2.682201179394744,
+      "maximum_absolute_salinity_drift_molal": 0.18220117939474267,
+      "maximum_fractional_salinity_drift": 0.07288047175789703
+    },
+    "grid_refinement": {
+      "pressure_min_bar": 194.01275930405507,
+      "pressure_max_bar": 305.7087448244808,
+      "salinity_min_molal": 2.499999999999821,
+      "salinity_max_molal": 2.6831969040655164,
+      "maximum_absolute_salinity_drift_molal": 0.18319690406551503,
+      "maximum_fractional_salinity_drift": 0.07327876162620597
+    },
+    "grid_refinement_closed": {
+      "pressure_min_bar": 204.06246716250573,
+      "pressure_max_bar": 295.64570155842,
+      "salinity_min_molal": 2.499999999999815,
+      "salinity_max_molal": 2.6829579292670473,
+      "maximum_absolute_salinity_drift_molal": 0.18295792926704602,
+      "maximum_fractional_salinity_drift": 0.07318317170681837
+    },
+    "intrinsic_closed": {
+      "pressure_min_bar": 204.93847624067575,
+      "pressure_max_bar": 294.9227232854581,
+      "salinity_min_molal": 2.4999999999998206,
+      "salinity_max_molal": 2.634040294012064,
+      "maximum_absolute_salinity_drift_molal": 0.13404029401206285,
+      "maximum_fractional_salinity_drift": 0.05361611760482511
+    },
+    "intrinsic_flow": {
+      "pressure_min_bar": 195.02558466895795,
+      "pressure_max_bar": 304.8533996874073,
+      "salinity_min_molal": 2.499999999999821,
+      "salinity_max_molal": 2.6339572346184594,
+      "maximum_absolute_salinity_drift_molal": 0.1339572346184581,
+      "maximum_fractional_salinity_drift": 0.05358289384738321
+    },
+    "natural_flow": {
+      "pressure_min_bar": 195.02558466895795,
+      "pressure_max_bar": 304.85339995263337,
+      "salinity_min_molal": 2.499999999999815,
+      "salinity_max_molal": 2.683008451516144,
+      "maximum_absolute_salinity_drift_molal": 0.18300845151614276,
+      "maximum_fractional_salinity_drift": 0.07320338060645706
+    },
+    "timestep_refinement": {
+      "pressure_min_bar": 195.02558466895795,
+      "pressure_max_bar": 304.85348855781103,
+      "salinity_min_molal": 2.499999999999679,
+      "salinity_max_molal": 2.683013314126461,
+      "maximum_absolute_salinity_drift_molal": 0.18301331412645983,
+      "maximum_fractional_salinity_drift": 0.0732053256505839
+    },
+    "timestep_refinement_closed": {
+      "pressure_min_bar": 204.93104445453267,
+      "pressure_max_bar": 294.92272328545846,
+      "salinity_min_molal": 2.4999999999996727,
+      "salinity_max_molal": 2.6828151585892837,
+      "maximum_absolute_salinity_drift_molal": 0.18281515858928232,
+      "maximum_fractional_salinity_drift": 0.07312606343571289
+    },
+    "zero_source": {
+      "pressure_min_bar": 195.02558466895795,
+      "pressure_max_bar": 304.8534700772927,
+      "salinity_min_molal": 2.5000000000000013,
+      "salinity_max_molal": 2.5000000000000013,
+      "maximum_absolute_salinity_drift_molal": 0.0,
+      "maximum_fractional_salinity_drift": 0.0
+    }
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "scope": "Previously completed standard ten-year reference; regression evidence, not field validation.",
+  "cases": {
+    "closed": {
+      "code_sha256": "74a576b1b862e601de76983cbe01575acb77d2ff639cf61a97b90d7eea78a220",
+      "configuration_sha256": "bc5c81f40574b5b0e5320f3f1d56acfc44c3f359b7a70919f472fa0c8da6af5b",
+      "days": 3650.0,
+      "cells": 3648,
+      "generated_H2_kg": 4520741.79836857,
+      "retained_free_H2_kg": 465047.2686227787,
+      "retained_dissolved_H2_kg": 4055694.636702002,
+      "exported_H2_kg": 0.0,
+      "max_native_relative_balance_error": {
+        "H2": 9.208485835424662e-12,
+        "H2O": 1.2300678446543033e-13,
+        "NaCl": 2.0179303481425616e-13
+      },
+      "parameters": {
+        "nx": 16,
+        "ny": 12,
+        "nz": 18,
+        "length_x_m": 4000.0,
+        "length_y_m": 3000.0,
+        "thickness_m": 900.0,
+        "top_depth_m": 1900.0,
+        "datum_depth_m": 2500.0,
+        "producer_bhp_bar": 265.78,
+        "source_centre_m": [
+          2000.0,
+          1500.0,
+          2580.0
+        ],
+        "source_semiaxes_m": [
+          800.0,
+          500.0,
+          180.0
+        ],
+        "rock_density_kg_m3": 3300.0,
+        "host_density_kg_m3": 2800.0,
+        "porosity": 0.05,
+        "host_permeability_md": 100.0,
+        "source_permeability_md": 10.0,
+        "vertical_permeability_ratio": 0.1,
+        "temperature_k": 353.15,
+        "salinity_molal": 2.5,
+        "brine_density_kg_m3": 1080.0,
+        "brine_viscosity_cp": 0.7,
+        "brine_compressibility_per_bar": 4e-05,
+        "rock_compressibility_per_bar": 0.0001,
+        "boundary_mode": "closed",
+        "hydraulic_gradient": 0.05,
+        "runtime_days": 3650.0,
+        "half_time_days": 3650.0,
+        "fe_mass_fraction": 0.06,
+        "ferrous_fraction": 1.0,
+        "accessible_fraction": 0.01,
+        "reaction_enabled": true,
+        "feedback_enabled": true,
+        "damage_enabled": true,
+        "hydration_water_kg_per_kg_altered_rock": 0.15,
+        "solid_expansion_fraction": 0.4,
+        "effective_confinement_modulus_mpa": 10000.0,
+        "tensile_threshold_mpa": 2.0,
+        "damage_stress_scale_mpa": 4.0,
+        "permeability_gain": 99.0,
+        "damage_permeability_exponent": 3.0,
+        "surface_area_gain": 4.0,
+        "passivation_strength": 1.0,
+        "inhibition_strength": 1.0,
+        "water_contact_exponent": 1.0,
+        "residual_water_saturation": 0.2,
+        "residual_gas_saturation": 0.01,
+        "capillary_entry_bar": 0.02,
+        "capillary_exponent": 2.0,
+        "capillary_max_bar": 20.0,
+        "aqueous_effective_diffusion_m2_s": 1e-09,
+        "first_timestep_days": 0.0001,
+        "max_timestep_days": 10.0,
+        "nonlinear_tolerance": 1e-09,
+        "obl_pressure_step_bar": 0.2,
+        "obl_hydrogen_step": 2e-06,
+        "obl_water_step": 2e-06,
+        "boundary_well_radius_m": 0.1,
+        "snapshot_days": [
+          0.0,
+          365.0,
+          1825.0,
+          3650.0
+        ],
+        "layers": [
+          {
+            "name": "Rodenrijs claystone cap",
+            "top_depth_m": 1900,
+            "bottom_depth_m": 2100,
+            "porosity": 0.06,
+            "permeability_md": 0.004,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2500,
+            "capillary_entry_bar": 2.0
+          },
+          {
+            "name": "Delft sandstone upper",
+            "top_depth_m": 2100,
+            "bottom_depth_m": 2160,
+            "porosity": 0.18,
+            "permeability_md": 100.0,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2350,
+            "capillary_entry_bar": 0.05
+          },
+          {
+            "name": "Intra-Delft fine-grained baffle",
+            "top_depth_m": 2160,
+            "bottom_depth_m": 2200,
+            "porosity": 0.08,
+            "permeability_md": 0.1,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2500,
+            "capillary_entry_bar": 1.0
+          },
+          {
+            "name": "Delft sandstone lower",
+            "top_depth_m": 2200,
+            "bottom_depth_m": 2300,
+            "porosity": 0.24,
+            "permeability_md": 300.0,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2300,
+            "capillary_entry_bar": 0.03
+          },
+          {
+            "name": "Alblasserdam underburden",
+            "top_depth_m": 2300,
+            "bottom_depth_m": 2400,
+            "porosity": 0.08,
+            "permeability_md": 0.01,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2550,
+            "capillary_entry_bar": 1.0
+          },
+          {
+            "name": "Hypothetical deeper host",
+            "top_depth_m": 2400,
+            "bottom_depth_m": 2800,
+            "porosity": 0.05,
+            "permeability_md": 1.0,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2800,
+            "capillary_entry_bar": 0.2
+          }
+        ],
+        "corridor_enabled": true,
+        "corridor_x_bounds_m": [
+          1875.0,
+          2125.0
+        ],
+        "corridor_y_bounds_m": [
+          1375.0,
+          1625.0
+        ],
+        "corridor_depth_bounds_m": [
+          2300.0,
+          2600.0
+        ],
+        "corridor_horizontal_permeability_md": 10.0,
+        "corridor_vertical_permeability_md": 100.0,
+        "salt_basis_particles_per_nacl": 2.0
+      }
+    },
+    "natural_flow": {
+      "code_sha256": "74a576b1b862e601de76983cbe01575acb77d2ff639cf61a97b90d7eea78a220",
+      "configuration_sha256": "1b1f8c467e59d80dc36044116fe574e7a7c01b3481681e36b9cc75f091536044",
+      "days": 3650.0,
+      "cells": 3648,
+      "generated_H2_kg": 4535988.206672938,
+      "retained_free_H2_kg": 359831.46731086436,
+      "retained_dissolved_H2_kg": 4176156.8412741255,
+      "exported_H2_kg": 0.0027888072620666287,
+      "max_native_relative_balance_error": {
+        "H2": 1.3031568809273173e-12,
+        "H2O": 1.852570453456979e-14,
+        "NaCl": 1.59613535460868e-14
+      },
+      "parameters": {
+        "nx": 16,
+        "ny": 12,
+        "nz": 18,
+        "length_x_m": 4000.0,
+        "length_y_m": 3000.0,
+        "thickness_m": 900.0,
+        "top_depth_m": 1900.0,
+        "datum_depth_m": 2500.0,
+        "producer_bhp_bar": 265.78,
+        "source_centre_m": [
+          2000.0,
+          1500.0,
+          2580.0
+        ],
+        "source_semiaxes_m": [
+          800.0,
+          500.0,
+          180.0
+        ],
+        "rock_density_kg_m3": 3300.0,
+        "host_density_kg_m3": 2800.0,
+        "porosity": 0.05,
+        "host_permeability_md": 100.0,
+        "source_permeability_md": 10.0,
+        "vertical_permeability_ratio": 0.1,
+        "temperature_k": 353.15,
+        "salinity_molal": 2.5,
+        "brine_density_kg_m3": 1080.0,
+        "brine_viscosity_cp": 0.7,
+        "brine_compressibility_per_bar": 4e-05,
+        "rock_compressibility_per_bar": 0.0001,
+        "boundary_mode": "natural_flow",
+        "hydraulic_gradient": 0.05,
+        "runtime_days": 3650.0,
+        "half_time_days": 3650.0,
+        "fe_mass_fraction": 0.06,
+        "ferrous_fraction": 1.0,
+        "accessible_fraction": 0.01,
+        "reaction_enabled": true,
+        "feedback_enabled": true,
+        "damage_enabled": true,
+        "hydration_water_kg_per_kg_altered_rock": 0.15,
+        "solid_expansion_fraction": 0.4,
+        "effective_confinement_modulus_mpa": 10000.0,
+        "tensile_threshold_mpa": 2.0,
+        "damage_stress_scale_mpa": 4.0,
+        "permeability_gain": 99.0,
+        "damage_permeability_exponent": 3.0,
+        "surface_area_gain": 4.0,
+        "passivation_strength": 1.0,
+        "inhibition_strength": 1.0,
+        "water_contact_exponent": 1.0,
+        "residual_water_saturation": 0.2,
+        "residual_gas_saturation": 0.01,
+        "capillary_entry_bar": 0.02,
+        "capillary_exponent": 2.0,
+        "capillary_max_bar": 20.0,
+        "aqueous_effective_diffusion_m2_s": 1e-09,
+        "first_timestep_days": 0.0001,
+        "max_timestep_days": 10.0,
+        "nonlinear_tolerance": 1e-09,
+        "obl_pressure_step_bar": 0.2,
+        "obl_hydrogen_step": 2e-06,
+        "obl_water_step": 2e-06,
+        "boundary_well_radius_m": 0.1,
+        "snapshot_days": [
+          0.0,
+          365.0,
+          1825.0,
+          3650.0
+        ],
+        "layers": [
+          {
+            "name": "Rodenrijs claystone cap",
+            "top_depth_m": 1900,
+            "bottom_depth_m": 2100,
+            "porosity": 0.06,
+            "permeability_md": 0.004,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2500,
+            "capillary_entry_bar": 2.0
+          },
+          {
+            "name": "Delft sandstone upper",
+            "top_depth_m": 2100,
+            "bottom_depth_m": 2160,
+            "porosity": 0.18,
+            "permeability_md": 100.0,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2350,
+            "capillary_entry_bar": 0.05
+          },
+          {
+            "name": "Intra-Delft fine-grained baffle",
+            "top_depth_m": 2160,
+            "bottom_depth_m": 2200,
+            "porosity": 0.08,
+            "permeability_md": 0.1,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2500,
+            "capillary_entry_bar": 1.0
+          },
+          {
+            "name": "Delft sandstone lower",
+            "top_depth_m": 2200,
+            "bottom_depth_m": 2300,
+            "porosity": 0.24,
+            "permeability_md": 300.0,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2300,
+            "capillary_entry_bar": 0.03
+          },
+          {
+            "name": "Alblasserdam underburden",
+            "top_depth_m": 2300,
+            "bottom_depth_m": 2400,
+            "porosity": 0.08,
+            "permeability_md": 0.01,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2550,
+            "capillary_entry_bar": 1.0
+          },
+          {
+            "name": "Hypothetical deeper host",
+            "top_depth_m": 2400,
+            "bottom_depth_m": 2800,
+            "porosity": 0.05,
+            "permeability_md": 1.0,
+            "vertical_permeability_ratio": 0.1,
+            "bulk_density_kg_m3": 2800,
+            "capillary_entry_bar": 0.2
+          }
+        ],
+        "corridor_enabled": true,
+        "corridor_x_bounds_m": [
+          1875.0,
+          2125.0
+        ],
+        "corridor_y_bounds_m": [
+          1375.0,
+          1625.0
+        ],
+        "corridor_depth_bounds_m": [
+          2300.0,
+          2600.0
+        ],
+        "corridor_horizontal_permeability_md": 10.0,
+        "corridor_vertical_permeability_md": 100.0,
+        "salt_basis_particles_per_nacl": 2.0
+      }
+    }
+  },
+  "generation_change_percent": 0.337254569811285
+}

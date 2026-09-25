@@ -1,0 +1,9 @@
+# Native Open-DARTS must have a compatible compiled engine. See docs/installation.md.
+open-darts==2.0.0
+open-darts-flash==0.14.0
+numpy==2.4.6
+scipy==1.17.1
+pandas==2.3.3
+matplotlib==3.11.2
+h5py==3.14.0
+iapws==1.5.5

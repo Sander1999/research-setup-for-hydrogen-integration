@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this research model if you use it, and cite Open-DARTS separately."
+title: "Delft-dunite DARTS: a hypothetical hydrogen source and transport model"
+type: software
+version: 0.1.0
+authors:
+  - family-names: "Bert da Costa"
+    given-names: "Sander"
+abstract: >-
+  Preliminary numerical support for a proposal combining established natural-hydrogen
+  research methods. An ideal dunite source is inserted below a Delft-inspired
+  sedimentary sequence. This is not a calibrated Delft hydrogen resource model.

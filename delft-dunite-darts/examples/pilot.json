@@ -1,0 +1,11 @@
+{
+  "nx": 6,
+  "ny": 4,
+  "nz": 4,
+  "runtime_days": 365.0,
+  "max_timestep_days": 10.0,
+  "snapshot_days": [
+    0.0,
+    365.0
+  ]
+}

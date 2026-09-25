@@ -1,0 +1,9 @@
+source_id,case_group,quantity,value_or_description,basis,evidence_status,source_url,inference_limit
+Vardon2024,Delft campus,reservoir,approximately 2 km below campus; deviated wells target deeper part,m TVD versus well MD must be separated,reported approximate setting,https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2024/Vardon.pdf,Does not determine a flat formation top throughout the model
+Vardon2024,Delft campus,fluid temperature,about 80,degC,reported expected initial production,https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2024/Vardon.pdf,Uniform80C model is an isothermal approximation
+VardonEndWell2024,DEL-GT-01,open-hole log interval,MD2570-2930 approximately TVD2110-2335,m,"published figure, visual reading page211",https://doi.org/10.4233/uuid:6ce07471-6986-434e-aa24-ad6e1f6714d9,"Approximate log extent, not picked formation boundaries"
+Voskov2024,Delft digital-twin modelling,porosity range,.01-.264,fraction,published model Table1,https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2024/Voskov.pdf,"Model range guided bylogs, not a uniform measured reservoir value"
+Voskov2024,Delft digital-twin modelling,permeability range,.004-1113,mD,published model Table1,https://pangea.stanford.edu/ERE/db/GeoConf/papers/SGW/2024/Voskov.pdf,Not direct H2 relative permeability or capillary measurements
+Bruhn2026,Delft campus,stratigraphic order,Rodenrijs Claystone / Delft Sandstone / upper Alblasserdam,top to bottom,published geological architecture,https://sd.copernicus.org/articles/35/83/2026/,Does not imply dunite exists below the sandstone
+ThisStudy,counterfactual,dunite source and corridor,inserted ideal body and alternative connectivity,scenario,assumed_scenario,,Not mapped or measured at Delft
+ThisStudy,natural landscape analogue,grassland/shrubland/woodland,candidate sampling strata,functional groups,assumed_scenario,,Not a vegetation map of Delft and not a calibrated plant response
